@@ -21,10 +21,10 @@ const CONFIG = {
   mostrarPendientes: true,
 
   contacto: {
-    whatsapp: "",            // solo números con código de país, ej: 5493511234567
-    email: "",               // ej: hola@etmedia.com.ar
-    instagram: "",           // sin @, ej: etmedia.ar
-    agenda: ""               // link de Calendly u otro para agendar llamada (opcional)
+    whatsapp: "https://wa.me/message/VP5R6JYA57AUG1",  // link de WhatsApp, o solo números con código de país (ej: 5493511234567)
+    email: "etmediateam@gmail.com",
+    instagram: "_et_media",  // sin @
+    agenda: "https://calendly.com/etmediateam/30min"   // link de Calendly para agendar llamada
   },
 
   // Palabras que van cambiando en el titular ("Videos que hacen crecer tu ...")
@@ -35,33 +35,31 @@ const CONFIG = {
 
   // Clientes que pasan abajo del titular. foto: imagen cuadrada (logo o cara). rubro "" para no mostrarlo
   clientes: [
-    { nombre: "Lucy's House",         foto: "", rubro: { es: "Casas modulares",       en: "Modular homes" } },
-    { nombre: "Spazio",               foto: "", rubro: { es: "Aberturas de aluminio", en: "Aluminium frames" } },
-    { nombre: "Botánico Dental Care", foto: "", rubro: { es: "Clínica odontológica",  en: "Dental clinic" } },
-    { nombre: "OK Perfumes",          foto: "", rubro: { es: "Fragancias",            en: "Fragrances" } },
-    { nombre: "Kunayan",              foto: "", rubro: { es: "Fundación cultural",    en: "Cultural foundation" } },
-    { nombre: "Panthera",             foto: "", rubro: { es: "Agencia de marketing",  en: "Marketing agency" } },
-    { nombre: "Marcos Rassetti",      foto: "", rubro: { es: "Empresario",            en: "Entrepreneur" } },
-    { nombre: "Sergio Hernandez",     foto: "", rubro: { es: "Coach de liderazgo",    en: "Leadership coach" } },
-    { nombre: "Next Bike Plus",       foto: "", rubro: { es: "", en: "" } },
-    { nombre: "Grinplace",            foto: "", rubro: { es: "", en: "" } }
+    { nombre: "Lucy's House",     foto: "img/cl-lucys-house.jpg",      rubro: { es: "Casas modulares",      en: "Modular homes" } },
+    { nombre: "Marcos Razzetti",  foto: "img/cl-marcos-razzetti.jpg",  rubro: { es: "CEO de BlueHackers",   en: "CEO at BlueHackers" } },
+    { nombre: "Sergio Hernandez", foto: "img/cl-sergio-hernandez.jpg", rubro: { es: "Coach de liderazgo",   en: "Leadership coach" } },
+    { nombre: "NextBike Plus",    foto: "img/cl-nextbike.jpg",         rubro: { es: "Tienda de ciclismo",   en: "Bike shop" } },
+    { nombre: "Grinplace",        foto: "img/cl-grinplace.jpg",        rubro: { es: "Tienda Apple",         en: "Apple store" } },
+    { nombre: "Health Tesh",      foto: "img/cl-health-tesh.jpg",      rubro: { es: "Nutricionista y chef", en: "Nutritionist and chef" } },
+    { nombre: "Kunayan",          foto: "img/cl-kunayan.jpg",          rubro: { es: "Fundación cultural",   en: "Cultural foundation" } },
+    { nombre: "Botánico Dental Care", foto: "img/cl-botanico.jpg",     rubro: { es: "Clínica odontológica", en: "Dental clinic" } }
   ],
 
   // Tarjetas de números
   stats: [
-    { titulo: { es: "Probado a escala", en: "Proven at scale" }, valor: "+2.000", label: { es: "Videos editados", en: "Videos edited" } },
-    { titulo: { es: "Alcance real", en: "Real reach" },          valor: "+20M",   label: { es: "Reproducciones generadas", en: "Views generated" } },
-    { titulo: { es: "Experiencia", en: "Experience" },           valor: "4",      label: { es: "Años editando", en: "Years editing" } }
+    { titulo: { es: "Trabajo comprobado", en: "Proven track record" },  valor: "+2.000", label: { es: "Videos editados", en: "Videos edited" } },
+    { titulo: { es: "Alcance de nuestros videos", en: "Reach of our videos" }, valor: "+20M", label: { es: "Reproducciones", en: "Views" } },
+    { titulo: { es: "Desde 2022", en: "Since 2022" },                    valor: "4",      label: { es: "Años editando", en: "Years editing" } }
   ],
 
   // Testimonios: texto vacío = se ve como pendiente
   testimonios: [
-    { nombre: "Lucy's House",         foto: "", link: "", rubro: { es: "Casas modulares", en: "Modular homes" },         texto: { es: "", en: "" } },
-    { nombre: "Marcos Rassetti",      foto: "", link: "", rubro: { es: "Empresario", en: "Entrepreneur" },               texto: { es: "", en: "" } },
-    { nombre: "Botánico Dental Care", foto: "", link: "", rubro: { es: "Clínica odontológica", en: "Dental clinic" },    texto: { es: "", en: "" } },
-    { nombre: "Spazio",               foto: "", link: "", rubro: { es: "Aberturas de aluminio", en: "Aluminium frames" },texto: { es: "", en: "" } },
-    { nombre: "Sergio Hernandez",     foto: "", link: "", rubro: { es: "Coach de liderazgo", en: "Leadership coach" },   texto: { es: "", en: "" } },
-    { nombre: "OK Perfumes",          foto: "", link: "", rubro: { es: "Fragancias", en: "Fragrances" },                 texto: { es: "", en: "" } }
+    { nombre: "Lucy's House",     foto: "img/cl-lucys-house.jpg",      link: "", rubro: { es: "Casas modulares", en: "Modular homes" },           texto: { es: "", en: "" } },
+    { nombre: "Marcos Razzetti",  foto: "img/cl-marcos-razzetti.jpg",  link: "", rubro: { es: "CEO de BlueHackers", en: "CEO at BlueHackers" },   texto: { es: "", en: "" } },
+    { nombre: "Sergio Hernandez", foto: "img/cl-sergio-hernandez.jpg", link: "", rubro: { es: "Coach de liderazgo", en: "Leadership coach" },     texto: { es: "", en: "" } },
+    { nombre: "Health Tesh",      foto: "img/cl-health-tesh.jpg",      link: "", rubro: { es: "Nutricionista y chef", en: "Nutritionist and chef" }, texto: { es: "", en: "" } },
+    { nombre: "NextBike Plus",    foto: "img/cl-nextbike.jpg",         link: "", rubro: { es: "Tienda de ciclismo", en: "Bike shop" },            texto: { es: "", en: "" } },
+    { nombre: "Grinplace",        foto: "img/cl-grinplace.jpg",        link: "", rubro: { es: "Tienda Apple", en: "Apple store" },                texto: { es: "", en: "" } }
   ],
 
   // Trabajos por pestaña (los 3 primeros reels también aparecen en el inicio). masEjemplos: link a tu canal / IG / Drive con más trabajos
@@ -69,15 +67,15 @@ const CONFIG = {
     youtube: {
       masEjemplos: "",
       items: [
-        { cliente: "Marcos Rassetti",  link: "", duracion: "", titulo: { es: "Caso de éxito — entrevista", en: "Success story — interview" } },
-        { cliente: "Marcos Rassetti",  link: "", duracion: "", titulo: { es: "Caso de éxito — entrevista", en: "Success story — interview" } },
+        { cliente: "Marcos Razzetti",  link: "", duracion: "", titulo: { es: "Caso de éxito — entrevista", en: "Success story — interview" } },
+        { cliente: "Marcos Razzetti",  link: "", duracion: "", titulo: { es: "Caso de éxito — entrevista", en: "Success story — interview" } },
         { cliente: "Sergio Hernandez", link: "", duracion: "", titulo: { es: "Liderazgo", en: "Leadership" } }
       ]
     },
     reels: {
       masEjemplos: "",
       items: [
-        { cliente: "Lucy's House",         link: "", portada: "", titulo: { es: "Casas modulares", en: "Modular homes" } },
+        { cliente: "Lucy's House",         link: "https://www.instagram.com/reel/DVEM79SESQ6/", portada: "img/lucys-house-1.jpg", titulo: { es: "Showroom y módulos de entrega inmediata", en: "Showroom and ready-to-ship modules" } },
         { cliente: "Spazio",               link: "", portada: "", titulo: { es: "Aberturas de aluminio", en: "Aluminium frames" } },
         { cliente: "Botánico Dental Care", link: "", portada: "", titulo: { es: "Clínica odontológica", en: "Dental clinic" } },
         { cliente: "OK Perfumes",          link: "", portada: "", titulo: { es: "Fragancias", en: "Fragrances" } }
@@ -89,7 +87,7 @@ const CONFIG = {
   casos: [
     { cliente: "Lucy's House", foto: "", link: "", dato: "", datoLabel: { es: "vistas en 3 meses", en: "views in 3 months" },
       cita: { es: "", en: "" } },
-    { cliente: "Marcos Rassetti", foto: "", link: "", dato: "", datoLabel: { es: "reproducciones", en: "views" },
+    { cliente: "Marcos Razzetti", foto: "", link: "", dato: "", datoLabel: { es: "reproducciones", en: "views" },
       cita: { es: "", en: "" } },
     { cliente: "Botánico Dental Care", foto: "", link: "", dato: "", datoLabel: { es: "nuevos seguidores", en: "new followers" },
       cita: { es: "", en: "" } }
@@ -243,10 +241,10 @@ a.fc:hover{filter:brightness(1.12)}
 @media (min-width:960px){ .about-row{grid-template-columns:minmax(0,.85fr) minmax(0,2fr); gap:48px} }
 .about-row p{margin:0; font-size:18px; max-width:34ch}
 .statcards{display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(min(100%,210px),1fr))}
-.statcard{border:1px solid var(--line); border-radius:var(--r); padding:28px; min-height:290px; display:flex; flex-direction:column; justify-content:space-between; gap:24px; background:linear-gradient(180deg,#18181a,#111112); min-width:0}
+.statcard{border:1px solid var(--line); border-radius:var(--r); padding:28px; min-height:240px; display:flex; flex-direction:column; justify-content:space-between; gap:24px; background:linear-gradient(180deg,#18181a,#111112); min-width:0}
 .statcard .st{font-weight:500; font-size:17px; color:var(--muted)}
-.statcard b{display:block; font-size:clamp(52px,5.2vw,74px); line-height:.95; font-weight:600; letter-spacing:-.05em; font-variant-numeric:tabular-nums}
-.statcard .sl{display:block; font-size:19px; font-weight:600; margin-top:14px}
+.statcard b{display:inline-block; font-size:clamp(44px,4.2vw,62px); line-height:1; font-weight:600; letter-spacing:-.04em; padding-right:.08em; white-space:nowrap; font-variant-numeric:tabular-nums}
+.statcard .sl{display:block; font-size:18px; font-weight:600; margin-top:10px; white-space:nowrap}
 @media (max-width:640px){ .statcard{min-height:200px} }
 
 /* Testimonios */
@@ -562,13 +560,13 @@ const T = {
     "hero.sub":"Hacé crecer tu audiencia y despreocupate del contenido: edición de reels, shorts y videos largos para YouTube.",
     "hero.float":"",
     "hero.hand":"Mirá cómo trabajamos","hero.reel":"Showreel ET Media","reel.pending":"Link pendiente","reel.ok":"Ver video ↗",
-    "trust.title":"Marcas que confían en nosotros","trust.sub":"Construcción, salud, fragancias, cultura y más.",
+    "trust.title":"Marcas que confían en nosotros","trust.sub":"Construcción, tecnología, salud, liderazgo y más.",
     "about.tag":"Sobre nosotros",
-    "about.statement":"Somos el equipo de edición de tu marca: reels, shorts y videos largos para YouTube, para empresas, emprendedores y marcas personales.",
+    "about.statement":"Vos grabás, nosotros nos encargamos del resto: reels, shorts y videos de YouTube listos para publicar.",
     "about.small":"ET Media ayuda a marcas y negocios a publicar con constancia, crecer en redes y vender más, con trabajo de calidad y entregas a tiempo.",
     "test.tag":"Testimonios","test.title":"Por qué las marcas nos eligen","test.pending":"Testimonio pendiente. Cargalo en CONFIG → testimonios.","test.case":"Ver caso",
     "feat.tag":"Qué hacemos","feat.title":"Todo lo que tu contenido necesita",
-    "feat.sub":"Edición, ritmo, subtítulos, motion graphics y sonido. Vos grabás o nos mandás el material, nosotros nos encargamos del resto.",
+    "feat.sub":"Edición, ritmo, subtítulos, motion graphics y sonido, todo con el mismo equipo.",
     "feat":[
       ["team","Equipo dedicado","El mismo equipo trabaja tu marca de punta a punta y mantiene tu estilo en cada pieza."],
       ["script","Guion y ganchos","Pensamos la estructura antes de editar para que tus videos se miren hasta el final."],
@@ -585,7 +583,7 @@ const T = {
     "cases.tag":"Casos de éxito","cases.title":"Resultados que se ven",
     "cases.pending":"Cargá el dato real y la frase del cliente en CONFIG → casos.","cases.see":"Ver caso",
     "proc.tag":"Cómo funciona","proc.title":"Empezar es simple",
-    "proc":[["Agendá una llamada","15 minutos para conocer tu marca, tus objetivos y qué tipo de contenido necesitás."],
+    "proc":[["Agendá una llamada","30 minutos para conocer tu marca, tus objetivos y qué tipo de contenido necesitás."],
             ["Recibí tu propuesta","Te armamos un plan con cantidades, tiempos y precio. Sin letra chica."],
             ["Revisá y publicá","Recibís cada pieza, marcás cambios si hace falta y la publicás lista."]],
     "price.tag":"Precios","price.title":"Un precio a medida de tu marca",
@@ -604,7 +602,7 @@ const T = {
     "foot.desc":"Edición de video que hace crecer marcas. Desde Córdoba, Argentina, para todo el mundo.",
     "foot.contact":"Contacto","foot.services":"Servicios","foot.explore":"Explorar",
     "foot.copy":"© 2026 ET Media. Todos los derechos reservados.","foot.top":"Volver arriba ↑",
-    "ct.wa":"WhatsApp","ct.mail":"Email","ct.ig":"Instagram","ct.pending":"Pendiente: cargar en CONFIG","ct.copy":"Copiar","ct.copied":"Copiado","ct.open":"Abrir",
+    "ct.wa":"WhatsApp","ct.wa.chat":"Escribinos por WhatsApp","ct.mail":"Email","ct.ig":"Instagram","ct.pending":"Pendiente: cargar en CONFIG","ct.copy":"Copiar","ct.copied":"Copiado","ct.open":"Abrir",
     "wa.msg":"Hola ET Media, quiero empezar un proyecto."
   },
   en:{
@@ -614,13 +612,13 @@ const T = {
     "hero.sub":"Grow your audience and stop worrying about content: editing for reels, shorts and long-form YouTube videos.",
     "hero.float":"",
     "hero.hand":"See how we work","hero.reel":"ET Media showreel","reel.pending":"Link pending","reel.ok":"Watch ↗",
-    "trust.title":"Brands that trust us","trust.sub":"Construction, health, fragrance, culture and more.",
+    "trust.title":"Brands that trust us","trust.sub":"Construction, tech, health, leadership and more.",
     "about.tag":"About us",
-    "about.statement":"We're your brand's editing team: reels, shorts and long-form YouTube videos for businesses, entrepreneurs and personal brands.",
+    "about.statement":"You film, we handle the rest: reels, shorts and YouTube videos ready to post.",
     "about.small":"ET Media helps brands and businesses post consistently, grow on social and sell more, with quality work delivered on time.",
     "test.tag":"Testimonials","test.title":"Why brands choose us","test.pending":"Testimonial pending. Add it in CONFIG → testimonios.","test.case":"View case",
     "feat.tag":"What we do","feat.title":"Everything your content needs",
-    "feat.sub":"Editing, pacing, captions, motion graphics and sound. You film or send the footage, we handle the rest.",
+    "feat.sub":"Editing, pacing, captions, motion graphics and sound, all from one team.",
     "feat":[
       ["team","Dedicated team","The same team works on your brand end to end and keeps your style in every piece."],
       ["script","Scripts and hooks","We plan the structure before editing so your videos get watched to the end."],
@@ -637,7 +635,7 @@ const T = {
     "cases.tag":"Success stories","cases.title":"Results you can see",
     "cases.pending":"Add the real figure and the client's quote in CONFIG → casos.","cases.see":"View case",
     "proc.tag":"How it works","proc.title":"Getting started is simple",
-    "proc":[["Book a call","15 minutes to learn about your brand, your goals and the content you need."],
+    "proc":[["Book a call","30 minutes to learn about your brand, your goals and the content you need."],
             ["Get your proposal","We send a plan with quantities, timing and price. No fine print."],
             ["Review and post","You get every piece, request changes if needed and post it ready to go."]],
     "price.tag":"Pricing","price.title":"Pricing built around your brand",
@@ -656,7 +654,7 @@ const T = {
     "foot.desc":"Video editing that grows brands. From Córdoba, Argentina, to the world.",
     "foot.contact":"Contact","foot.services":"Services","foot.explore":"Explore",
     "foot.copy":"© 2026 ET Media. All rights reserved.","foot.top":"Back to top ↑",
-    "ct.wa":"WhatsApp","ct.mail":"Email","ct.ig":"Instagram","ct.pending":"Pending: add in CONFIG","ct.copy":"Copy","ct.copied":"Copied","ct.open":"Open",
+    "ct.wa":"WhatsApp","ct.wa.chat":"Message us on WhatsApp","ct.mail":"Email","ct.ig":"Instagram","ct.pending":"Pending: add in CONFIG","ct.copy":"Copy","ct.copied":"Copied","ct.open":"Open",
     "wa.msg":"Hi ET Media, I'd like to start a project."
   }
 };
@@ -674,7 +672,7 @@ if (!T[lang]) lang = "es";
 const t = k => T[lang][k];
 const L = o => (o && (o[lang] || o.es)) || "";
 
-function waLink(){ const w = CONFIG.contacto.whatsapp; return w ? `https://wa.me/${w}?text=${encodeURIComponent(t("wa.msg"))}` : ""; }
+function waLink(){ const w = CONFIG.contacto.whatsapp; if (!w) return ""; if (/^https?:/.test(w)) return w; return `https://wa.me/${w}?text=${encodeURIComponent(t("wa.msg"))}`; }
 
 function render(){
   document.documentElement.lang = lang;
@@ -775,13 +773,13 @@ function renderPrices(){
 function renderContact(){
   const c = CONFIG.contacto;
   const rows = [
-    { k:t("ct.wa"), v:c.whatsapp ? "+" + c.whatsapp : "", href:waLink(), act:"WhatsApp ↗" },
+    { k:t("ct.wa"), v:c.whatsapp ? (/^https?:/.test(c.whatsapp) ? t("ct.wa.chat") : "+" + c.whatsapp) : "", copy:waLink(), href:waLink(), act:"WhatsApp ↗" },
     { k:t("ct.mail"), v:c.email, href:"", act:"" },
     { k:t("ct.ig"), v:c.instagram ? "@" + c.instagram : "", href:c.instagram ? `https://instagram.com/${c.instagram}` : "", act:t("ct.open") + " ↗" }
   ];
   $("channels").innerHTML = rows.map((r,i) => `
     <div class="ch"><span class="k">${esc(r.k)}</span><span class="v ${r.v ? "" : "pend"}">${esc(r.v || t("ct.pending"))}</span>
-      ${r.v ? `<div class="acts">${r.href ? `<a href="${esc(r.href)}" target="_blank" rel="noopener">${esc(r.act)}</a>` : ""}<button type="button" id="copy-${i}" data-copy="${esc(r.v)}">${esc(t("ct.copy"))}</button></div>` : ""}
+      ${r.v ? `<div class="acts">${r.href ? `<a href="${esc(r.href)}" target="_blank" rel="noopener">${esc(r.act)}</a>` : ""}<button type="button" id="copy-${i}" data-copy="${esc(r.copy || r.v)}">${esc(t("ct.copy"))}</button></div>` : ""}
     </div>`).join("");
 }
 
